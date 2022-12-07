@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/secoes.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/faleConosco.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagens/logo.png">
+        <div class="esquerda">
+            <div class="pesquisar">
+                <input class="pesquisar-campo" type="text" placeholder="O que deseja encontrar?">
+                <button class="pesquisar-lupa" style="background-image: url('./imagens/lupa.svg');"></button>
+            </div>
+        </div>
+        <div class="direita">
+            <button class="login">Login</button>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner__conteudo">
+                <h1 class="banner__conteudo--titulo">Promoções de Fim de Ano</h1>
+                <h3 class="banner__conteudo--subtitulo">Produtos selecionados com até 70% de desconto</h3>
+                <button class="banner__conteudo--botao">Ver Promoções</button>
+            </div>
+        </section>
+
+        <section class="secoes">
+            <div class="secao">
+                <div class="secao__cabecalho">
+                    <h1 class="secao__cabecalho--titulo">Star Wars</h1>
+                    <h3 class="secao__cabecalho--mais">Ver Tudo ></h3>
+                </div>
+                <div class="secao__conteudo" id="StarWars">
+                    <!--<div class="secao__unidade">
+                        <img class="secao__unidade--imagem" src="./imagens/starwars_1.png" alt="Imagem do Produto">
+                        <span class="secao__unidade--nome">Nome do Produto</span>
+                        <span class="secao__unidade--valor">R$ 0,00</span>
+                        <span class="secao__unidade--mais">Ver Produto</span>
+                    </div>-->   
+                </div>
+
+                <div class="secao__cabecalho">
+                    <h1 class="secao__cabecalho--titulo">Consoles</h1>
+                    <h3 class="secao__cabecalho--mais">Ver Tudo ></h3>
+                </div>
+                <div class="secao__conteudo" id="Consoles"></div>
+
+                <div class="secao__cabecalho">
+                    <h1 class="secao__cabecalho--titulo">Diversos</h1>
+                    <h3 class="secao__cabecalho--mais">Ver Tudo ></h3>
+                </div>
+                <div class="secao__conteudo" id="Diversos"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="rodape">
+            <div class="rodepe__logo">
+                <img class="logo" src="./imagens/logo.png">
+            </div>
+            
+            <nav class="rodape__lista">
+                <ul class="lista">
+                    <li><a href="#">Quem somos nós</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Programa fidelidade</a></li>
+                    <li><a href="#">Nossas lojas</a></li>
+                    <li><a href="#">Quero ser franqueado</a></li>
+                    <li><a href="#">Anuncie aqui</a></li>
+                </ul>
+            </nav>
+
+            <form class="fale-conosco" action="">
+                <span class="fale-conosco__titulo">Fale conosco</span>
+                <div class="fale-conosco__campo">
+                    <input class="fale-conosco__nome campo-texto" type="text" placeholder="Nome">
+                    <label class="campo-label">Nome</label>
+                </div>
+                <div class="fale-conosco__campo">
+                    <textarea class="fale-conosco__mensagem campo-texto" placeholder="Escreva sua mensagem"></textarea>
+                    <label class="campo-label">Escreva sua mensagem</label>
+                </div>
+                <input class="fale-conosco__enviar" type="submit">
+            </form>
+        </section>
+        <div class="desenvolvedor">
+            <span>Desenvolvido por João Gabriel de Freitas Antunes</span><br>
+            <span>2022</span>
+        </div>
+    </footer>
+    <script src="./js/produtos.js"></script>
+</body>
+</html>
