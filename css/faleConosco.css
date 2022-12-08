@@ -111,13 +111,13 @@
         align-self: center;
 
         width: 90%;
-        height: 50vh;
+        height: 40vh;
 
         margin-top: 1rem;
     }
 
     .fale-conosco__mensagem{
-        height: 7rem;
+        height: 12rem;
     }
 }
 
