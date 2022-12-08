@@ -10,22 +10,22 @@ header{
     background-color: #FFFFFF;
 }
 
+.logo{
+    margin-right: 10%;
+}
+
 .esquerda{
     display: flex;
     align-items: center;
 
-    width: 75%;
-}
-
-.logo{
-    margin-right: 5%;
+    width: 50%;
 }
 
 .pesquisar{
     display: flex;
     justify-content: space-between;
     
-    width: 30%;
+    width: 35%;
     height: 50%;
 
     padding: .5% 1%;
@@ -34,6 +34,8 @@ header{
     border-radius: 20px;
 
     background-color: #F5F5F5;
+
+    transition: 1s;
 }
 
 .pesquisar:focus-within {
@@ -82,17 +84,23 @@ header{
     cursor: pointer;
 }
 
+@media screen and (min-width: 769px) {
+    .pesquisar:focus-within {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header{
         width: 90%;
     }
 
-    .pesquisar{
-        width: 50%;
+    .logo, .lupa{
+        margin-right: 2.5%;
     }
 
     .login{
-        width: 100%;
+        width: 90%;
     }
 }
 
