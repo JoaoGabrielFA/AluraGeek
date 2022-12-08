@@ -67,3 +67,17 @@ footer{
         text-align: center;
     }
 }
+
+@media screen and (max-width: 930px) and (orientation: landscape) {
+    .rodape{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        height: 60vh;
+    }
+
+    .rodape__logo, .rodape__lista{
+        width: 30%;
+    }
+}

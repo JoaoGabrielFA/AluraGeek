@@ -75,6 +75,12 @@
 
     .banner__conteudo--botao{
         width: 35%;
-        height: 35%;
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 930px) and (orientation: landscape) {
+    .banner__conteudo{
+        height: 80%;
     }
 }

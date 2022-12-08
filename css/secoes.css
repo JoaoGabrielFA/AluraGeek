@@ -97,14 +97,33 @@
     .secao__conteudo{
         justify-content: space-between;
         flex-wrap: wrap;
-        height: 80vh;
-        overflow: hidden;
+        height: 55vh;
+        padding-bottom: 0rem;
+    }
+
+    .secao__conteudo:last-child{
+        margin-bottom: 5vh;
     }
 
     .secao__unidade{
         width: 45%;
-        height: 40%;
+        height: 28vh;
 
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .secao__unidade:nth-child(n+5){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 930px) and (orientation: landscape) {
+    .secao__unidade{
+        height: 50vh;
+    }
+
+    .secao__conteudo{
+        margin-bottom: 15vh;
     }
 }

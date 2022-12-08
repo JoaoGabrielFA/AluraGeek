@@ -120,3 +120,11 @@
         height: 7rem;
     }
 }
+
+@media screen and (max-width: 930px) and (orientation: landscape) {
+    .fale-conosco{
+        align-self: flex-end;
+        width: 70%;
+        height: 110%;
+    }
+}
