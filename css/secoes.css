@@ -126,4 +126,10 @@
     .secao__conteudo{
         margin-bottom: 15vh;
     }
+
+    .secao__unidade:hover{
+        border: none;
+        
+        transform: scale(1.0);
+    }
 }

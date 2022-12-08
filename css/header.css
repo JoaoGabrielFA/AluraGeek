@@ -105,7 +105,7 @@ header{
         margin: .5rem auto;
     }
 
-    .logo{
+    header .logo{
         width: 40%;
     }
 
@@ -137,7 +137,7 @@ header{
     .esquerda{
         width: 65%;
     }
-    
+
     .pesquisar{
         width: 100%;
     }
