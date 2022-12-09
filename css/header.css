@@ -75,6 +75,7 @@ header{
 }
 
 .login{
+    display: flex;
     width: 50%;
 
     background-color: #FFFFFF;
@@ -82,6 +83,15 @@ header{
     color: #2A7AE4;
 
     cursor: pointer;
+}
+
+.login a{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    color: inherit;
+    text-decoration: none;
+    line-height: 45px;
 }
 
 @media screen and (min-width: 769px) {

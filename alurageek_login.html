@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Alura Geek</title>
+    <title>Alura Geek | Login</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/body.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/banner.css">
-    <link rel="stylesheet" href="./css/secoes.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/faleConosco.css">
 </head>
@@ -22,46 +21,21 @@
                 <button class="pesquisar-lupa" style="background-image: url('./imagens/lupa.svg');"></button>
             </div>
         </div>
-        <div class="direita">
-            <button class="login"><a href="alurageek_login.html">Login</a></button>
-        </div>
     </header>
     <main>
-        <section class="banner">
-            <div class="banner__conteudo">
-                <h1 class="banner__conteudo--titulo">Promoções de Fim de Ano</h1>
-                <h3 class="banner__conteudo--subtitulo">Produtos selecionados com até 70% de desconto</h3>
-                <button class="banner__conteudo--botao">Ver Promoções</button>
-            </div>
-        </section>
-
-        <section class="secoes">
-            <div class="secao">
-                <div class="secao__cabecalho">
-                    <h1 class="secao__cabecalho--titulo">Star Wars</h1>
-                    <h3 class="secao__cabecalho--mais">Ver Tudo &#10140;</h3>
+        <section class="login">
+            <form class="login__form">
+                <span class="login__titulo">Iniciar Sessão</span>
+                <div class="login__div">
+                    <input class="login__campo" type="email" placeholder="Escreva seu email" required>
+                    <label class="login__label">Escreva seu email</label>
                 </div>
-                <div class="secao__conteudo" id="StarWars">
-                    <!--<div class="secao__unidade">
-                        <img class="secao__unidade--imagem" src="./imagens/starwars_1.png" alt="Imagem do Produto">
-                        <span class="secao__unidade--nome">Nome do Produto</span>
-                        <span class="secao__unidade--valor">R$ 0,00</span>
-                        <span class="secao__unidade--mais">Ver Produto</span>
-                    </div>-->   
+                <div class="login__div">
+                    <input class="login__campo" type="password" placeholder="Escreva sua senha" required>
+                    <label class="login__label">Escreva sua senha</label>
                 </div>
-
-                <div class="secao__cabecalho">
-                    <h1 class="secao__cabecalho--titulo">Consoles</h1>
-                    <h3 class="secao__cabecalho--mais">Ver Tudo &#10140;</h3>
-                </div>
-                <div class="secao__conteudo" id="Consoles"></div>
-
-                <div class="secao__cabecalho">
-                    <h1 class="secao__cabecalho--titulo">Diversos</h1>
-                    <h3 class="secao__cabecalho--mais">Ver Tudo &#10140;</h3>
-                </div>
-                <div class="secao__conteudo" id="Diversos"></div>
-            </div>
+                <input class="login__enviar" type="submit" value="Entrar">
+            </form>
         </section>
     </main>
     <footer>
@@ -99,6 +73,5 @@
             <span>2022</span>
         </div>
     </footer>
-    <script src="./js/produtos.js"></script>
 </body>
 </html>
