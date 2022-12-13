@@ -1,7 +1,7 @@
 .secoes{
     display: flex;
 
-    width: 80%;
+    width: calc(80% + 8px);
     
     margin: 5vh auto;
 }
@@ -18,11 +18,21 @@
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 1rem;
+    padding: 0 3px;
+    color: #464646;
 }
 
 .secao__cabecalho--mais{
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #2A7AE4;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.secao__cabecalho--mais:hover{
+    border-bottom: solid 2px #114992;
+    color: #114992;
 }
 
 .secao__conteudo{
@@ -41,7 +51,7 @@
 
     width: 15%;
     height: 100%;
-
+    padding: 2px;
     border: solid #ffffff00 2px;
 
     transition: .1s;
@@ -50,8 +60,8 @@
 }
 
 .secao__unidade:hover{
-    border: solid #2A7AE4 2px;
-    
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px;
     transform: scale(1.1);
 }
 

@@ -74,7 +74,7 @@ header{
     width: 25%;
 }
 
-.login{
+.login-btn{
     display: flex;
     width: 50%;
 
@@ -85,7 +85,7 @@ header{
     cursor: pointer;
 }
 
-.login a{
+.login-btn a{
     width: 100%;
     height: 100%;
     align-self: center;

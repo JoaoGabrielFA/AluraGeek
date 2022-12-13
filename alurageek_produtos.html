@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Alura Geek | Home</title>
+    <title>Alura Geek | Produtos</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/body.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/banner.css">
-    <link rel="stylesheet" href="./css/secoes.css">
+    <link rel="stylesheet" href="./css/secoes2.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/faleConosco.css">
 </head>
@@ -27,19 +26,11 @@
         </div>
     </header>
     <main>
-        <section class="banner">
-            <div class="banner__conteudo">
-                <h1 class="banner__conteudo--titulo">Dezembro Promocional</h1>
-                <h3 class="banner__conteudo--subtitulo">Produtos selecionados com 33% de desconto</h3>
-                <button class="banner__conteudo--botao">Ver Promoções</button>
-            </div>
-        </section>
-
         <section class="secoes">
             <div class="secao">
                 <div class="secao__cabecalho">
-                    <h1 class="secao__cabecalho--titulo">Star Wars</h1>
-                    <a class="secao__cabecalho--mais" href="alurageek_produtos.html">Ver Tudo &#10140;</a>
+                    <h1 class="secao__cabecalho--titulo">Todos os Produtos</h1>
+                    <button class="secao__cabecalho--adicionar">Adicionar Produto</button>
                 </div>
                 <div class="secao__conteudo" id="StarWars">
                     <!--<div class="secao__unidade">
@@ -47,20 +38,10 @@
                         <span class="secao__unidade--nome">Nome do Produto</span>
                         <span class="secao__unidade--valor">R$ 0,00</span>
                         <span class="secao__unidade--mais">Ver Produto</span>
-                    </div>-->   
+                        <img class="secao__unidade--editar" src="./imagens/icons/editar.png">
+                        <img class="secao__unidade--deletar" src="./imagens/icons/deletar.png">
+                    </div>-->
                 </div>
-
-                <div class="secao__cabecalho">
-                    <h1 class="secao__cabecalho--titulo">Consoles</h1>
-                    <a class="secao__cabecalho--mais" href="alurageek_produtos.html">Ver Tudo &#10140;</a>
-                </div>
-                <div class="secao__conteudo" id="Consoles"></div>
-
-                <div class="secao__cabecalho">
-                    <h1 class="secao__cabecalho--titulo">Diversos</h1>
-                    <a class="secao__cabecalho--mais" href="alurageek_produtos.html">Ver Tudo &#10140;</a>
-                </div>
-                <div class="secao__conteudo" id="Diversos"></div>
             </div>
         </section>
     </main>
@@ -99,6 +80,6 @@
             <span>2022</span>
         </div>
     </footer>
-    <script src="./js/produtos.js"></script>
+    <script src="./js/todosProdutos.js"></script>
 </body>
 </html>

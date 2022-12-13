@@ -4,8 +4,11 @@ body{
 
     width: 100vw;
     height: 100vh;
-
     margin: 0 auto;
 
     overflow-x: hidden;
+}
+
+main{
+    background-color: #F5F5F5;
 }
