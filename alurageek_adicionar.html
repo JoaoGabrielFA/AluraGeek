@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Alura Geek - Login</title>
+    <link rel="icon" href="./imagens/icons/controle.png">
+    <title>Alura Geek - Adicionar Produto</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/body.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/faleConosco.css">
+    <link rel="stylesheet" href="./css/adicionar.css">
 </head>
 <body>
     <header>
@@ -23,20 +24,37 @@
         </div>
     </header>
     <main>
-        <section class="login">
-            <form class="login__form">
-                <span class="login__titulo">Iniciar Sessão</span>
-                <div class="login__div">
-                    <input class="login__campo" type="email" placeholder="Escreva seu email" required>
-                    <label class="login__label">Escreva seu email</label>
-                </div>
-                <div class="login__div">
-                    <input class="login__campo" type="password" placeholder="Escreva sua senha" required>
-                    <label class="login__label">Escreva sua senha</label>
-                </div>
-                <input class="login__enviar" type="submit" value="Entrar">
-            </form>
-        </section>
+        <form class="ad-produto" action="javascript:teste()">
+            <span class="ad-produto__titulo">Adicionar Novo Produto</span>
+            <div class="ad-produto__div">
+                <input type="text" class="ad-produto__div--input" id="url" required>
+                <label class="ad-produto__div--label">URL da imagem</label>
+            </div>
+            
+            <div class="ad-produto__div">
+                <input type="text" class="ad-produto__div--input" id="categoria" required>
+                <label class="ad-produto__div--label">Categoria</label>
+            </div>
+
+            <div class="ad-produto__div">
+                <input type="text" class="ad-produto__div--input" id="nome" required>
+                <label class="ad-produto__div--label">Nome do produto</label>
+            </div>
+
+            <div class="ad-produto__div">
+                <input type="text" class="ad-produto__div--input" id="preco" required>
+                <label class="ad-produto__div--label">Preço do produto</label>
+            </div>
+
+            <div class="ad-produto__div">
+                <textarea class="ad-produto__div--input" id="descricao" required></textarea>
+                <label class="ad-produto__div--label">Descrição do produto</label>
+            </div>
+
+            <div class="ad-produto__div">
+                <input type="submit" class="ad-produto__div--adicionar" value="Adicionar Produto">
+            </div>
+        </form>
     </main>
     <footer>
         <section class="rodape">
@@ -73,5 +91,7 @@
             <span>2022</span>
         </div>
     </footer>
+    <script src="./js/Produto.js"></script>
+    <script src="./js/novoProduto.js"></script>
 </body>
 </html>

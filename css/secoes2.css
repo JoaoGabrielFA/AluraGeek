@@ -64,6 +64,14 @@
     transform: scale(1.1);
 }
 
+.secao__unidade--imagem{
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    background-color: #FFFFFF;
+    object-fit: contain;
+}
+
 .secao__unidade--valor{
     font-weight: bold;
 }
@@ -140,5 +148,6 @@
 
     .secao__unidade{
         width: 46%;
+        margin: 0;
     }
 }

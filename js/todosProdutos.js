@@ -1,4 +1,4 @@
-const starwars = [
+/*const starwars = [
     produto1 = {
         nome: "Caneca Stormtrooper",
         valor: "R$ 29,99",
@@ -95,17 +95,11 @@ const diversos = [
         valor: "R$ 349,99",
         imagem: "./imagens/diversos/6.png"
     }
-];
+];*/
 
 function montaProdutos(){
-    for(i = 0; i < starwars.length; i++){
-        document.getElementById("StarWars").innerHTML += `<div class="secao__unidade"><img class="secao__unidade--imagem" src="${starwars[i].imagem}" alt="Imagem do Produto"><span class="secao__unidade--nome">${starwars[i].nome}</span><span class="secao__unidade--valor">${starwars[i].valor}</span><span class="secao__unidade--mais">Ver Produto</span><img class="secao__unidade--editar" src="./imagens/icons/editar.png"><img class="secao__unidade--deletar" src="./imagens/icons/deletar.png"></div>`;
-    }
-    for(i = 0; i < consoles.length; i++){
-        document.getElementById("StarWars").innerHTML += `<div class="secao__unidade"><img class="secao__unidade--imagem" src="${consoles[i].imagem}" alt="Imagem do Produto"><span class="secao__unidade--nome">${consoles[i].nome}</span><span class="secao__unidade--valor">${consoles[i].valor}</span><span class="secao__unidade--mais">Ver Produto</span><img class="secao__unidade--editar" src="./imagens/icons/editar.png"><img class="secao__unidade--deletar" src="./imagens/icons/deletar.png"></div>`;
-    }
-    for(i = 0; i < diversos.length; i++){
-        document.getElementById("StarWars").innerHTML += `<div class="secao__unidade"><img class="secao__unidade--imagem" src="${diversos[i].imagem}" alt="Imagem do Produto"><span class="secao__unidade--nome">${diversos[i].nome}</span><span class="secao__unidade--valor">${diversos[i].valor}</span><span class="secao__unidade--mais">Ver Produto</span><img class="secao__unidade--editar" src="./imagens/icons/editar.png"><img class="secao__unidade--deletar" src="./imagens/icons/deletar.png"></div>`;
+    for(i = 0; i < produtos.length; i++){
+        document.getElementById("StarWars").innerHTML += `<div class="secao__unidade"><img class="secao__unidade--imagem" src="${produtos[i].url}" alt="Imagem do Produto"><span class="secao__unidade--nome">${produtos[i].nome}</span><span class="secao__unidade--valor">${produtos[i].preco}</span><span class="secao__unidade--mais">Ver Produto</span><img class="secao__unidade--editar" src="./imagens/icons/editar.png"><img class="secao__unidade--deletar" src="./imagens/icons/deletar.png"></div>`;
     }
 }
 
