@@ -40,7 +40,7 @@
 .secao__conteudo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 10vh;
 }
 
@@ -51,6 +51,7 @@
     justify-content: space-between;
     width: 15%;
     aspect-ratio: 1/1.5;
+    margin: 0 5.7px;
     margin-bottom: 2rem;
     padding: .2%;
     border: solid #ffffff00 2px;

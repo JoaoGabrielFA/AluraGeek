@@ -9,43 +9,45 @@
     flex-direction: column;
     justify-content: space-between;
 
-    width: 650px;
+    width: 550px;
     height: 350px;
 
     margin: 0 auto;
     padding: 30px;
-
-    border-radius: 10px;
-
-    background-color: white;
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.login__div{
-    position: relative;
+.login__form input{
+    font-size: 1.2rem;
 }
 
 .login__form > *{
     height: 18%;
 }
 
-.login__titulo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    align-self: center;
+.login__div{
+    position: relative;
+
+    width: 100%;
 }
 
-.login__form input{
-    border-radius: 5px;
-    font-size: 1.2rem;
+.login__titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: center;
+    color: #464646;
 }
 
 .login__campo{
-    width: calc(95.6% - 2px);
-    height: 100%;
-    padding: 0 2.2%;
-    border: solid black 1px;
+    width: calc(100% - 1rem);
+    height: 2rem;
+    padding: 1.3rem .5rem .5rem;
+
+    border: none;
+
+    text-align: left;
+    text-align: start;
+
+    box-shadow: 0 1px rgb(129, 128, 128);
 }
 
 .login__campo::placeholder{
@@ -58,21 +60,11 @@
 
 .login__label{
     position: absolute;
-    top: 1.1rem;
-    left: calc(.05rem + 2%);
-    padding: 0 .2rem;
-    background-color: white;
-    color: #00000082;
-    font-size: 1.2rem;
-    pointer-events: none;
-    transition: .5s;
-}
+    left: .5rem;
+    top: .5rem;
 
-.login__campo:focus + .login__label,
-.login__campo:not(:placeholder-shown) + .login__label{
-    font-size: 1rem; 
-    transform: translate(0, -1.7rem);
-    
+    font-size: .8rem;
+    color: #5d5d5d;
 }
 
 .login__campo:focus + .login__label{
@@ -84,6 +76,7 @@
     border: solid #2A7AE4 10px;
     background-color: #2A7AE4;
     color: #FFFFFF;
+    box-shadow: 0 1px rgb(129, 128, 128);
     cursor: pointer;
     transition: .5s;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Alura Geek - Produtos</title>
+    <title>Alura Geek - Todos os Produtos</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/body.css">
@@ -13,26 +13,26 @@
     <link rel="stylesheet" href="./css/faleConosco.css">
 </head>
 <body>
-    <header>
-        <img class="logo" src="./imagens/logo.png">
-        <div class="esquerda">
-            <div class="pesquisar">
-                <input class="pesquisar-campo" type="text" placeholder="O que deseja encontrar?">
-                <button class="pesquisar-lupa" style="background-image: url('./imagens/lupa.svg');"></button>
-            </div>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./imagens/icons/logo_1.svg">
+            <img src="./imagens/icons/logo_2.svg">
+            <img src="./imagens/icons/logo_3.svg">
         </div>
-        <div class="direita">
-            <button class="login-btn"><a href="alurageek_login.html">Login</a></button>
+        <div class="header__pesquisar">
+            <input class="header__pesquisar--input" type="text" placeholder="O que deseja encontrar?">
+            <button class="header__pesquisar--lupa" style="background-image: url('./imagens/lupa.svg');"></button>
         </div>
+        <a id="login" class="header__button" href="alurageek_login.html">Login</a>
     </header>
     <main>
         <section class="secoes">
             <div class="secao">
                 <div class="secao__cabecalho">
                     <h1 class="secao__cabecalho--titulo">Todos os Produtos</h1>
-                    <button class="secao__cabecalho--adicionar"><a href="alurageek_adicionar.html">Adicionar Produto</a></button>
+                    <button class="secao__cabecalho--adicionar"><a id="adicionar" onclick="checkLogin()">Adicionar Produto</a></button><!--href="alurageek_adicionar.html"-->
                 </div>
-                <div class="secao__conteudo" id="StarWars">
+                <div class="secao__conteudo" id="produtos">
                     <!--<div class="secao__unidade">
                         <img class="secao__unidade--imagem" src="./imagens/starwars_1.png" alt="Imagem do Produto">
                         <span class="secao__unidade--nome">Nome do Produto</span>
@@ -82,5 +82,6 @@
     </footer>
     <script src="./js/Produto.js"></script>
     <script src="./js/todosProdutos.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

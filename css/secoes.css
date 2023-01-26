@@ -73,6 +73,8 @@
     color: #2A7AE4;
 
     font-weight: bold;
+    
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {

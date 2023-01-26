@@ -11,5 +11,7 @@ function teste(){
 
     localStorage.setItem('Lista de Produtos', JSON.stringify(produtos));
 
+    alert("Produto adicionado!");
+
     location.reload();
 }

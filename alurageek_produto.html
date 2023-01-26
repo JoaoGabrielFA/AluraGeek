@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Alura Geek - Home</title>
+    <link rel="icon" href="./imagens/icons/controle.png">
+    <title>Alura Geek - Produto</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/body.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/banner.css">
-    <link rel="stylesheet" href="./css/secoes2.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/faleConosco.css">
+    <link rel="stylesheet" href="./css/produto.css">
+    <link rel="stylesheet" href="./css/secoes2.css">
 </head>
 <body>
     <header class="header">
@@ -27,33 +28,21 @@
         <a id="login" class="header__button" href="alurageek_login.html">Login</a>
     </header>
     <main>
-        <section class="banner">
-            <div class="banner__conteudo">
-                <h1 class="banner__conteudo--titulo">Dezembro Promocional</h1>
-                <h3 class="banner__conteudo--subtitulo">Produtos selecionados com 33% de desconto</h3>
-                <button class="banner__conteudo--botao" onclick="abre()">Ver Promoções</button>
+        <section class="s-produto">
+            <div class="produto">
+                <div class="produto__div">
+                    <img class="produto__imagem" src="" alt="">
+                </div>
+                <div class="produto__div">
+                    <span class="produto__nome">Produto XYZ</span>
+                    <span class="produto__valor">R$ 49,99</span>
+                    <span class="produto__descricao">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</span>
+                </div>
             </div>
-        </section>
 
-        <section class="secoes">
-            <div class="secao">
-                <div class="secao__cabecalho">
-                    <h1 class="secao__cabecalho--titulo">Star Wars</h1>
-                    <a class="secao__cabecalho--mais" href="alurageek_produtos.html">Ver Tudo &#10140;</a>
-                </div>
-                <div class="secao__conteudo" id="StarWars"></div>
-
-                <div class="secao__cabecalho">
-                    <h1 class="secao__cabecalho--titulo">Consoles</h1>
-                    <a class="secao__cabecalho--mais" href="alurageek_produtos.html">Ver Tudo &#10140;</a>
-                </div>
-                <div class="secao__conteudo" id="Consoles"></div>
-
-                <div class="secao__cabecalho">
-                    <h1 class="secao__cabecalho--titulo">Diversos</h1>
-                    <a class="secao__cabecalho--mais" href="alurageek_produtos.html">Ver Tudo &#10140;</a>
-                </div>
-                <div class="secao__conteudo" id="Diversos"></div>
+            <div class="produto__similares">
+                <span class="produto__similares--titulo">Produtos Similares</span>
+                <div class="secao__conteudo" id="similares"></div>
             </div>
         </section>
     </main>
@@ -93,7 +82,7 @@
         </div>
     </footer>
     <script src="./js/Produto.js"></script>
-    <script src="./js/produtos.js"></script>
+    <script src="./js/produtoEscolhido.js"></script>
     <script src="./js/login.js"></script>
 </body>
 </html>

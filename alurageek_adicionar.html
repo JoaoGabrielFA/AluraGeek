@@ -14,14 +14,17 @@
     <link rel="stylesheet" href="./css/adicionar.css">
 </head>
 <body>
-    <header>
-        <img class="logo" src="./imagens/logo.png">
-        <div class="esquerda">
-            <div class="pesquisar">
-                <input class="pesquisar-campo" type="text" placeholder="O que deseja encontrar?">
-                <button class="pesquisar-lupa" style="background-image: url('./imagens/lupa.svg');"></button>
-            </div>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./imagens/icons/logo_1.svg">
+            <img src="./imagens/icons/logo_2.svg">
+            <img src="./imagens/icons/logo_3.svg">
         </div>
+        <div class="header__pesquisar">
+            <input class="header__pesquisar--input" type="text" placeholder="O que deseja encontrar?">
+            <button class="header__pesquisar--lupa" style="background-image: url('./imagens/lupa.svg');"></button>
+        </div>
+        <a id="login" class="header__button" href="alurageek_login.html">Login</a>
     </header>
     <main>
         <form class="ad-produto" action="javascript:teste()">
@@ -93,5 +96,6 @@
     </footer>
     <script src="./js/Produto.js"></script>
     <script src="./js/novoProduto.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

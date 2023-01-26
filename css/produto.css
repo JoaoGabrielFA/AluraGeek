@@ -1,0 +1,52 @@
+.s-produto{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.produto{
+    display: flex;
+    width: 100%;
+}
+
+.produto__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.produto__div span{
+    width: 90%;
+    margin: .5rem auto;
+}
+
+.produto__imagem{
+    width: 100%;
+    aspect-ratio: 5/3;
+    background-color: #ffffff;
+    object-fit: contain;
+    box-shadow: 0 2px 0 #00000043;
+}
+
+.produto__nome{
+    font-size: 3rem;
+    color: #464646;
+}
+
+.produto__valor{
+    font-weight: bold;
+}
+
+.produto__similares{
+    margin: 3rem 0 3rem;
+}
+
+.produto__similares--titulo{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #464646;
+}
+
+#similares{
+    margin-top: 1.5rem;
+}

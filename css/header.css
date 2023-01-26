@@ -1,162 +1,135 @@
-header{
+.header{
     display: flex;
-
-    width: 80%;
-    height: 7%;
-
-    margin: 0 auto;
-    padding: 1.5% 0;
-
-    background-color: #FFFFFF;
-}
-
-.logo{
-    margin-right: 10%;
-}
-
-.esquerda{
-    display: flex;
+    justify-content: flex-start;
     align-items: center;
 
-    width: 50%;
+    width: 80%;
+    padding: 1rem 0;
+    margin: 0 auto;
 }
 
-.pesquisar{
+.header__logo{
+    display: flex;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.header__logo img:first-child{
+    margin-right: 5px;
+}
+
+.header__pesquisar{
     display: flex;
     justify-content: space-between;
-    
-    width: 35%;
-    height: 50%;
+    align-items: center;
 
-    padding: .5% 1%;
+    width: 420px;
+    height: 60%;
+    padding: 2.5px 10px;
+    margin: 0 30px;
 
     border: solid #F5F5F5 2px;
     border-radius: 20px;
-
     background-color: #F5F5F5;
-
-    transition: 1s;
 }
 
-.pesquisar:focus-within {
-    border: solid black 2px;
+.header__pesquisar:focus-within {
+    border-color: #2A7AE4;
 }
 
-.pesquisar-campo{
-    width: 90%;
-
+.header__pesquisar--input{
+    width: 100%;
     border: none;
-
-    background-color: #F5F5F5;
+    background-color: transparent;
 }
 
-.pesquisar-campo:focus {
+.header__pesquisar--input:focus{
     outline: none;
 }
 
-.pesquisar-lupa{
-    height: 110%;
+.header__pesquisar--input::placeholder{
+    opacity: 70%;
+}
+
+.header__pesquisar--lupa{
+    height: 1.5rem;
     aspect-ratio: 1/1;
 
     border: none;
-    border-radius: 20px;
-
-    background-size: 90%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: transparent;
 
     cursor: pointer;
 }
 
-.direita{
-    display: flex;
-    justify-content: flex-end;
-    width: 25%;
-}
+.header__button{
+    padding: 14px 70px;
+    margin-left: auto;
+    border: solid 1px #2A7AE4;
 
-.login-btn{
-    display: flex;
-    width: 50%;
-
-    background-color: #FFFFFF;
-    border-color: #2A7AE4;
     color: #2A7AE4;
-
-    cursor: pointer;
-}
-
-.login-btn a{
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    color: inherit;
     text-decoration: none;
-    line-height: 45px;
+
+    transition: .4s;
 }
 
-@media screen and (min-width: 769px) {
-    .pesquisar:focus-within {
-        width: 100%;
-    }
+.header__button:hover{
+    color: #FFFFFF;
+    background-color: #2A7AE4;
 }
 
 @media screen and (max-width: 768px) {
-    header{
-        width: 90%;
+    .header{
+        width: 95%;
     }
 
-    .logo, .lupa{
-        margin-right: 2.5%;
+    .header__logo img{
+        height: 15px;
     }
 
-    .login{
-        width: 90%;
+    .header__logo img:first-child{
+        height: 25px;
+    }
+
+    .header__pesquisar{
+        width: 270px;
+    }
+
+    .header__button{
+        padding: 10px 50px;
     }
 }
 
 @media screen and (max-width: 430px) {
-    header{
-        height: auto;
-        flex-wrap: wrap;
+    .header{
         justify-content: space-between;
-
-        margin: .5rem auto;
     }
 
-    header .logo{
-        width: 40%;
+    .header__pesquisar{
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        padding: 0;
+
+        border-color: white;
+        background-color: white;
+
+        order: 1;   
     }
 
-    .direita{
-        width: 40%;
+    .header__pesquisar--input{
+        display: none;
     }
 
-    .esquerda{
-        width: 100%;
-        height: 3rem;
-        padding: .5rem 0;
-        order: 2;
+    .header__pesquisar--lupa{
+        margin: auto;
+        filter: brightness(50%);
     }
 
-    .pesquisar{
-        align-items: center;
-        width: 100%;
-        height: 75%;
-        margin-top: .5rem;
-        border-radius: 10px;
-    }
-
-    .pesquisar-lupa{
-        height: 80%;
-    }
-}
-
-@media screen and (max-width: 930px) and (orientation: landscape) {
-    .esquerda{
-        width: 65%;
-    }
-
-    .pesquisar{
-        width: 100%;
+    .header__button{
+        margin: 0;
     }
 }
