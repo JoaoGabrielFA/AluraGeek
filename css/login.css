@@ -8,10 +8,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     width: 550px;
     height: 350px;
-
     margin: 0 auto;
     padding: 30px;
 }
@@ -26,7 +24,6 @@
 
 .login__div{
     position: relative;
-
     width: 100%;
 }
 
@@ -41,12 +38,9 @@
     width: calc(100% - 1rem);
     height: 2rem;
     padding: 1.3rem .5rem .5rem;
-
     border: none;
-
     text-align: left;
     text-align: start;
-
     box-shadow: 0 1px rgb(129, 128, 128);
 }
 
@@ -62,7 +56,6 @@
     position: absolute;
     left: .5rem;
     top: .5rem;
-
     font-size: .8rem;
     color: #5d5d5d;
 }

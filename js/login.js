@@ -7,10 +7,20 @@ logado = JSON.parse(localStorage.getItem('Logado')) == null ? logado = false : l
 
 if(!logado){
     loginBtn.innerHTML = 'Logar';
+    gerenciaBotoes('add', '.secao__unidade--deletar');
+    gerenciaBotoes('add', '.secao__unidade--editar');
 } else {
     loginBtn.innerHTML = 'Deslogar';
     loginBtn.href = '#';
     loginBtn.addEventListener('click', deslogar); 
+    gerenciaBotoes('remove', '.secao__unidade--deletar');
+    gerenciaBotoes('remove', '.secao__unidade--editar');
+}
+
+function gerenciaBotoes(funcao, classe){
+    document.querySelectorAll(classe).forEach(element => {
+        funcao == 'add' ? element.classList.add('esconder') : element.classList.remove('esconder');
+    });
 }
 
 function checkLogin(){

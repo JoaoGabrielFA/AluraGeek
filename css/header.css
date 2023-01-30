@@ -2,7 +2,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     width: 80%;
     padding: 1rem 0;
     margin: 0 auto;
@@ -11,7 +10,6 @@
 .header__logo{
     display: flex;
     align-items: center;
-    
     cursor: pointer;
 }
 
@@ -23,12 +21,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 420px;
     height: 60%;
     padding: 2.5px 10px;
     margin: 0 30px;
-
     border: solid #F5F5F5 2px;
     border-radius: 20px;
     background-color: #F5F5F5;
@@ -55,13 +51,11 @@
 .header__pesquisar--lupa{
     height: 1.5rem;
     aspect-ratio: 1/1;
-
     border: none;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-
     cursor: pointer;
 }
 
@@ -69,10 +63,8 @@
     padding: 14px 70px;
     margin-left: auto;
     border: solid 1px #2A7AE4;
-
     color: #2A7AE4;
     text-decoration: none;
-
     transition: .4s;
 }
 
@@ -113,10 +105,8 @@
         height: 2rem;
         margin: 0;
         padding: 0;
-
         border-color: white;
         background-color: white;
-
         order: 1;   
     }
 

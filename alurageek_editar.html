@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="icon" href="./imagens/icons/logo_1.svg">
-    <title>Alura Geek - Adicionar Produto</title>
+    <title>Alura Geek - Editar Produto</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/body.css">
@@ -27,7 +27,7 @@
         <a id="login" class="header__button" href="alurageek_login.html">Login</a>
     </header>
     <main>
-        <form class="ad-produto" action="javascript:adicionarProduto()">
+        <form class="ad-produto" action="javascript:salvarProduto()">
             <span class="ad-produto__titulo">Adicionar Novo Produto</span>
             <div class="ad-produto__div">
                 <input type="text" class="ad-produto__div--input" id="url" required>
@@ -55,7 +55,7 @@
             </div>
 
             <div class="ad-produto__div">
-                <input type="submit" class="ad-produto__div--adicionar" value="Adicionar Produto">
+                <input type="submit" class="ad-produto__div--adicionar" value="Salvar Produto">
             </div>
         </form>
     </main>
@@ -96,7 +96,7 @@
     </footer>
     <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
     <script src="./js/Produto.js"></script>
-    <script src="./js/novoProduto.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/editar.js"></script>
 </body>
 </html>

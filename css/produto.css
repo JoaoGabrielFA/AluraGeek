@@ -29,7 +29,8 @@
 }
 
 .produto__nome{
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
     color: #464646;
 }
 
@@ -49,4 +50,23 @@
 
 #similares{
     margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .produto{
+        flex-wrap: wrap;
+    }
+
+    .produto__div{
+        width: 100%;
+    }
+
+    .produto__div span{
+        width: 100%;
+        margin: .5rem auto;
+    }
+
+    .produto__nome{
+        padding-top: 1rem;
+    }
 }

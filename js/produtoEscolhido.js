@@ -15,7 +15,7 @@ function montaSimilares(categoria_lista){
 
     for(i = 0; i < produtos.length; i++){
         if(produtos[i].categoria == categoria_lista && i != produto_escolhido){
-            document.getElementById("similares").innerHTML += `<div class="secao__unidade"><img class="secao__unidade--imagem" src="${produtos[i].url}" alt="Imagem do Produto"><span class="secao__unidade--nome">${produtos[i].nome}</span><span class="secao__unidade--valor">${produtos[i].preco}</span><a id=${i} onclick="escolher(this.id)" class="secao__unidade--mais" href="alurageek_produto.html">Ver Produto</a></div>`;
+            document.getElementById("similares").innerHTML += `<div class="secao__unidade" id=${i} onclick="escolher(this.id)"><img class="secao__unidade--imagem" src="${produtos[i].url}" alt="Imagem do Produto"><span class="secao__unidade--nome">${produtos[i].nome}</span><span class="secao__unidade--valor">${produtos[i].preco}</span></div>`;
             produtos__similares.push(i);
             c++;
         }
@@ -25,7 +25,7 @@ function montaSimilares(categoria_lista){
         n2 = Math.floor(Math.random()*produtos.length);
         
         if(produtos[n2].categoria != categoria_lista && !produtos__similares.includes(n2)){
-            document.getElementById("similares").innerHTML += `<div class="secao__unidade"><img class="secao__unidade--imagem" src="${produtos[n2].url}" alt="Imagem do Produto"><span class="secao__unidade--nome">${produtos[n2].nome}</span><span class="secao__unidade--valor">${produtos[n2].preco}</span><a id=${n2} onclick="escolher(this.id)" class="secao__unidade--mais" href="alurageek_produto.html">Ver Produto</a></div>`;
+            document.getElementById("similares").innerHTML += `<div class="secao__unidade" id=${n2} onclick="escolher(this.id)"><img class="secao__unidade--imagem" src="${produtos[n2].url}" alt="Imagem do Produto"><span class="secao__unidade--nome">${produtos[n2].nome}</span><span class="secao__unidade--valor">${produtos[n2].preco}</span></div>`;
             produtos__similares.push(n2);
             c++;
         }
@@ -34,6 +34,7 @@ function montaSimilares(categoria_lista){
 
 function escolher(produto){
     localStorage.setItem('Produto Escolhido', JSON.stringify(produto));
+    window.open('alurageek_produto.html', '_blank');
 }
 
 montaProduto(produtos[produto_escolhido]);

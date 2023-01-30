@@ -37,6 +37,12 @@
     background-color: #114992;
 }
 
+.secao__cabecalho--mais{
+    color: #2A7AE4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .secao__conteudo{
     display: flex;
     flex-wrap: wrap;
@@ -51,12 +57,16 @@
     justify-content: space-between;
     width: 15%;
     aspect-ratio: 1/1.5;
-    margin: 0 5.7px;
+    margin-right: calc(1.52% - 4px);
     margin-bottom: 2rem;
     padding: .2%;
     border: solid #ffffff00 2px;
     transition: .1s;
     cursor: pointer;
+}
+
+.secao__unidade:nth-child(6n){
+    margin-right: 0;
 }
 
 .secao__unidade:hover{
@@ -80,6 +90,7 @@
 .secao__unidade--mais{
     color: #2A7AE4;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .secao__unidade--editar, .secao__unidade--deletar{
@@ -99,6 +110,10 @@
 .secao__unidade--editar:hover, .secao__unidade--deletar:hover{
     transform: scale(1.2);
     filter: brightness(75%);
+}
+
+.esconder{
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
