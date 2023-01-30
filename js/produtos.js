@@ -13,7 +13,7 @@ function abre(){
 
 function escolher(produto){
     localStorage.setItem('Produto Escolhido', JSON.stringify(produto));
-    window.open("alurageek_produto.html", "_self");
+    window.open("alurageek_produto.html", "_blank");
 }
 
 montaLista("StarWars");
